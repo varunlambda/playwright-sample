@@ -17,6 +17,6 @@
     "chai": "^4.3.7"
   }
 "scripts": {
-    "test": "npx playwright test --config=./playwright.config.js"
+    "test": "npx playwright playwright-smartui.js --config=./playwright.config.js"
   }
 }
