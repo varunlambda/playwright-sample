@@ -14,7 +14,7 @@ const { expect } = require('@playwright/test');
       'network': true,
       'video': true,
       'console': true,
-      'smartUIProjectName': '<projectName>' //Add the required Smart UI Project name
+      'smartUIProjectName': 'Playwright_smartUI' //Add the required Smart UI Project name
     }
   }
 
@@ -28,7 +28,7 @@ const { expect } = require('@playwright/test');
 
   // Add the following command in order to take screenshot in SmartUI
   await page.evaluate((_) => {},
-    `lambdatest_action: ${JSON.stringify({ action: 'smartui.takeScreenshot', arguments: { fullPage: true, screenshotName: '<Your Screenshot Name>' }
+    `lambdatest_action: ${JSON.stringify({ action: 'smartui.takeScreenshot', arguments: { fullPage: true, screenshotName: 'Playwright_smartUI' }
     })}`) // Add a relevant screenshot name here
 
   const element = await page.$('[id="sb_form_q"]')
