@@ -6,7 +6,6 @@
 		"test-parallel": "node playwright-parallel.js",
 		"test-android": "node playwright-android-real-device.js",
 		"test-extension": "node playwright-extensions-test.js",
-		"test-smartUI": "npx playwright test-smartui --config=./playwright.config.js"
 	},
 	"engines": {
 		"node": ">=12.7.0"
