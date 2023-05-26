@@ -16,7 +16,7 @@
     "@cucumber/cucumber": "^7.3.2",
     "chai": "^4.3.7"
   }
-"scripts": {
-    "test": "npx playwright test --config=./playwright.config.js"
+  "scripts": {
+    "test": "npx playwright test-smartui --config=./playwright.config.js"
   }
 }
