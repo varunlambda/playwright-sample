@@ -9,10 +9,6 @@ on:
   pull_request:
     branches:
       - '**'
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    # This example triggers the workflow every day at 6:00 and 18:00 UTC:
-    - cron:  '0 6,18 * * *'
 
 jobs:
   tests:
@@ -33,4 +29,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: node playwright-smartui.js
+      - run: npm run test
