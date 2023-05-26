@@ -5,7 +5,7 @@
 		"test-smartui": "node playwright-smartui.js",
 		"test-parallel": "node playwright-parallel.js",
 		"test-android": "node playwright-android-real-device.js",
-		"test-extension": "node playwright-extensions-test.js",
+		"test-extension": "node playwright-extensions-test.js"
 	},
 	"engines": {
 		"node": ">=12.7.0"
